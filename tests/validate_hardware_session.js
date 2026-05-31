@@ -24,6 +24,7 @@ const requiredFields = [
   'WLED host',
   'Firmware binary',
   'Firmware build command',
+  'Firmware manifest',
   'WLED commit',
   'PlatformIO environment',
   'Recovery method confirmed',

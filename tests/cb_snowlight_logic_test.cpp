@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-#include "../cb-snowlight-usermod/cb_snowlight_logic.h"
+#include "../cb_snowlight_logic.h"
 
 using CBSnowlightLogic::Decision;
 using CBSnowlightLogic::DecisionConfig;

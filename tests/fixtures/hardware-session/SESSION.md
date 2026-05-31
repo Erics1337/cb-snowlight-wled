@@ -11,6 +11,7 @@ Copy this file into `hardware-snapshots/<session-label>/SESSION.md` for each dev
 - WLED host: http://example-wled.local
 - Firmware binary: WLED/.pio/build/cb_snowlight_nodemcuv2/firmware.bin
 - Firmware build command: env PLATFORMIO_CORE_DIR=... uv run --with platformio==6.1.17 platformio run -e cb_snowlight_nodemcuv2
+- Firmware manifest: WLED/.pio/build/cb_snowlight_nodemcuv2/firmware-manifest.json
 - WLED commit: d884a3e
 - PlatformIO environment: cb_snowlight_nodemcuv2
 

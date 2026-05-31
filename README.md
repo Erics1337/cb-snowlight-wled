@@ -4,7 +4,7 @@ CB SnowLIGHT is a WLED usermod project for a Crested Butte Mountain relief lamp 
 
 ## Setup
 
-Clone WLED alongside this repo (WLED is the build host; this repo is the usermod plugin):
+Clone WLED inside this repo (WLED is the build host; this repo root is the usermod library):
 
 ```sh
 git clone https://github.com/wled/WLED.git WLED
@@ -14,7 +14,7 @@ cp docs/platformio_override.example.ini WLED/platformio_override.ini
 
 ## Folders
 
-- `cb-snowlight-usermod/` - CB SnowLIGHT WLED usermod source
+- `cb_snowlight.cpp`, `cb_snowlight_logic.h`, `library.json` - CB SnowLIGHT WLED usermod source
 - `docs/PRD.md` - product requirements and build plan
 - `docs/BUILD_PLAN.md` - milestone plan for turning the PRD into a working WLED usermod prototype
 - `docs/platformio_override.example.ini` - local WLED build wiring example
@@ -27,6 +27,18 @@ cp docs/platformio_override.example.ini WLED/platformio_override.ini
 - `docs/END_TO_END_CHECKLIST.md` - prototype verification checklist
 - `docs/BUILD_VERIFICATION.md` - latest local WLED compile result and firmware size
 - `tests/` - host-side decision logic and artifact validation checks
+
+## Usermod Settings
+
+Settings live under `CBSnowlight` in WLED's Usermod Settings page. See `docs/usermod-config.cb-snowlight.json` for a first-pass reference config.
+
+Manual mode commands via `/json/state`:
+
+```json
+{ "CBSnowlight": { "mode": "powder" } }
+```
+
+Valid modes: `powder`, `storm`, `bluebird`, `alpenglow`, `night`, `offline`, `demo`. Use `"fetchNow": true` to force the next weather fetch.
 
 ## Current Direction
 
@@ -89,6 +101,20 @@ Check the latest local firmware binary size:
 
 ```sh
 node tests/check_firmware_size.js
+```
+
+Write a firmware manifest with size and SHA-256:
+
+```sh
+node tests/write_firmware_manifest.js
+node tests/validate_firmware_manifest.js
+```
+
+Package firmware, config, presets, and bench docs:
+
+```sh
+node tests/package_hardware_artifacts.js --out hardware-bundles/<label>
+node tests/validate_hardware_bundle.js --bundle hardware-bundles/<label>
 ```
 
 Validate the CB SnowLIGHT usermod config apply helper:

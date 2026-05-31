@@ -21,7 +21,7 @@ Result:
 
 - Status: success
 - Output: `All selected CB SnowLIGHT local checks passed`
-- Coverage: artifact validation, snapshot analyzer fixture validation, firmware binary size, helper dry-runs, hardware session template validation, strict hardware session fixture validation, hardware session bootstrap under `/tmp`, host decision logic, and optional mock WLED API checks.
+- Coverage: artifact validation, snapshot analyzer fixture validation, firmware binary size and manifest generation, helper dry-runs, hardware session template validation, strict hardware session fixture validation, hardware session bootstrap under `/tmp`, host decision logic, and optional mock WLED API checks.
 - Note: `--with-local-listen` binds local `127.0.0.1` test servers and may need permission in sandboxed environments.
 
 ## Hardware Session Bootstrap
@@ -116,6 +116,39 @@ Result:
 - Binary size: 977,280 bytes
 - Configured max upload size: 1,044,464 bytes
 - Remaining: 67,184 bytes
+
+## Firmware Manifest
+
+Command:
+
+```sh
+node tests/write_firmware_manifest.js --out /tmp/cb-snowlight-local-checks/firmware-manifest.json
+node tests/validate_firmware_manifest.js --manifest /tmp/cb-snowlight-local-checks/firmware-manifest.json
+```
+
+Result:
+
+- Status: success
+- Output: `Firmware manifest written: ../../../../../tmp/cb-snowlight-local-checks/firmware-manifest.json`
+- Output: `Firmware manifest validation passed`
+- Coverage: records firmware path, byte size, SHA-256, and generation time for hardware session evidence.
+- SHA-256: `d9e2e34712748d33393f2e8695a9ccebff18eb8f736ee0d06eaabce9708812fa`
+
+## Hardware Artifact Bundle
+
+Command:
+
+```sh
+node tests/package_hardware_artifacts.js --out /tmp/cb-snowlight-local-checks/hardware-bundle --force
+node tests/validate_hardware_bundle.js --bundle /tmp/cb-snowlight-local-checks/hardware-bundle
+```
+
+Result:
+
+- Status: success
+- Output: `Hardware artifact bundle written: ../../../../../tmp/cb-snowlight-local-checks/hardware-bundle`
+- Output: `Hardware artifact bundle validation passed`
+- Coverage: packages firmware binaries, generated firmware manifest, preset/config fixtures, hardware runbook, session template, safety checklist, end-to-end checklist, and build verification notes; validates required bundle files plus recorded byte sizes and SHA-256 values.
 
 ## WLED Snapshot Harness
 

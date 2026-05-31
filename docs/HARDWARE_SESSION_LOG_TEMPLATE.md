@@ -11,6 +11,7 @@ Copy this file into `hardware-snapshots/<session-label>/SESSION.md` for each dev
 - WLED host:
 - Firmware binary:
 - Firmware build command:
+- Firmware manifest:
 - WLED commit:
 - PlatformIO environment:
 

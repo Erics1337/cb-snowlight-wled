@@ -22,6 +22,20 @@ Confirm the firmware binary size:
 node tests/check_firmware_size.js
 ```
 
+Write a firmware manifest with size and SHA-256:
+
+```sh
+node tests/write_firmware_manifest.js
+node tests/validate_firmware_manifest.js
+```
+
+Optionally package all bench artifacts into one directory:
+
+```sh
+node tests/package_hardware_artifacts.js --out hardware-bundles/dev-board-001
+node tests/validate_hardware_bundle.js --bundle hardware-bundles/dev-board-001
+```
+
 ## 2. Start Evidence
 
 Create a session log:
@@ -42,6 +56,8 @@ env PLATFORMIO_CORE_DIR=/Users/ericswanson/code/extensions-plugins/cb-snowlight-
 ```
 
 Flash by the safest available dev-board method, then complete normal WLED Wi-Fi setup.
+
+Record the firmware manifest path and SHA-256 in `SESSION.md`.
 
 ## 4. Capture Baseline
 
