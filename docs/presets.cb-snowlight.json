@@ -1,0 +1,151 @@
+{
+  "0": {},
+  "1": {
+    "n": "CB Powder",
+    "on": true,
+    "bri": 190,
+    "transition": 20,
+    "mainseg": 0,
+    "seg": [
+      {
+        "id": 0,
+        "start": 0,
+        "stop": 50,
+        "grp": 1,
+        "spc": 0,
+        "on": true,
+        "bri": 255,
+        "col": [[210, 235, 255], [255, 255, 255], [80, 150, 255]],
+        "fx": 19,
+        "sx": 96,
+        "ix": 150,
+        "pal": 1
+      }
+    ]
+  },
+  "2": {
+    "n": "CB Storm",
+    "on": true,
+    "bri": 120,
+    "transition": 40,
+    "mainseg": 0,
+    "seg": [
+      {
+        "id": 0,
+        "start": 0,
+        "stop": 50,
+        "grp": 1,
+        "spc": 0,
+        "on": true,
+        "bri": 255,
+        "col": [[20, 45, 120], [95, 55, 170], [185, 210, 255]],
+        "fx": 2,
+        "sx": 28,
+        "ix": 80,
+        "pal": 5
+      }
+    ]
+  },
+  "3": {
+    "n": "CB Bluebird",
+    "on": true,
+    "bri": 160,
+    "transition": 30,
+    "mainseg": 0,
+    "seg": [
+      {
+        "id": 0,
+        "start": 0,
+        "stop": 50,
+        "grp": 1,
+        "spc": 0,
+        "on": true,
+        "bri": 255,
+        "col": [[160, 215, 255], [255, 255, 255], [100, 180, 255]],
+        "fx": 0,
+        "sx": 128,
+        "ix": 128,
+        "pal": 1
+      }
+    ]
+  },
+  "4": {
+    "n": "CB Alpenglow",
+    "on": true,
+    "bri": 150,
+    "transition": 45,
+    "mainseg": 0,
+    "seg": [
+      {
+        "id": 0,
+        "start": 0,
+        "stop": 50,
+        "grp": 1,
+        "spc": 0,
+        "on": true,
+        "bri": 255,
+        "col": [[255, 115, 145], [255, 170, 80], [255, 225, 190]],
+        "fx": 46,
+        "sx": 36,
+        "ix": 115,
+        "pal": 9
+      }
+    ]
+  },
+  "5": {
+    "n": "CB Night",
+    "on": true,
+    "bri": 45,
+    "transition": 60,
+    "mainseg": 0,
+    "seg": [
+      {
+        "id": 0,
+        "start": 0,
+        "stop": 50,
+        "grp": 1,
+        "spc": 0,
+        "on": true,
+        "bri": 255,
+        "col": [[15, 35, 85], [75, 95, 140], [255, 190, 120]],
+        "fx": 0,
+        "sx": 128,
+        "ix": 128,
+        "pal": 5
+      }
+    ]
+  },
+  "6": {
+    "n": "CB Offline",
+    "on": true,
+    "bri": 95,
+    "transition": 50,
+    "mainseg": 0,
+    "seg": [
+      {
+        "id": 0,
+        "start": 0,
+        "stop": 50,
+        "grp": 1,
+        "spc": 0,
+        "on": true,
+        "bri": 255,
+        "col": [[255, 170, 80], [255, 225, 170], [255, 245, 220]],
+        "fx": 2,
+        "sx": 18,
+        "ix": 85,
+        "pal": 9
+      }
+    ]
+  },
+  "7": {
+    "n": "CB Demo",
+    "playlist": {
+      "ps": [1, 2, 3, 4, 5, 6],
+      "dur": [90, 90, 90, 90, 90, 90],
+      "transition": [20, 40, 30, 45, 60, 50],
+      "repeat": 0,
+      "end": 3
+    }
+  }
+}

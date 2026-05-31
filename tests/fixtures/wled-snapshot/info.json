@@ -1,0 +1,23 @@
+{
+  "ver": "0.17.0-dev",
+  "vid": 2605010,
+  "name": "CB SnowLIGHT Dev",
+  "brand": "WLED",
+  "product": "FOSS",
+  "arch": "esp8266",
+  "flash": 4,
+  "freeheap": 24720,
+  "fs": {
+    "u": 41,
+    "t": 1024,
+    "pmt": 0
+  },
+  "leds": {
+    "count": 50,
+    "pwr": 820,
+    "fps": 42,
+    "maxpwr": 1500,
+    "maxseg": 12,
+    "bootps": 0
+  }
+}

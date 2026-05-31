@@ -1,0 +1,22 @@
+{
+  "host": "http://example-wled.local",
+  "capturedAt": "2026-05-30T22:30:00.000Z",
+  "files": [
+    {
+      "fileName": "info.json",
+      "endpoint": "/json/info"
+    },
+    {
+      "fileName": "state.json",
+      "endpoint": "/json/state"
+    },
+    {
+      "fileName": "cfg.json",
+      "endpoint": "/json/cfg"
+    },
+    {
+      "fileName": "presets.json",
+      "endpoint": "/presets.json"
+    }
+  ]
+}

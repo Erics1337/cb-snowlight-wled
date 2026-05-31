@@ -1,0 +1,10 @@
+{
+  "name": "cb-snowlight-usermod",
+  "version": "0.1.0",
+  "description": "CB SnowLIGHT WLED usermod for applying presets from Crested Butte snow and weather conditions.",
+  "keywords": ["wled", "usermod", "snow", "weather", "open-meteo"],
+  "build": {
+    "libArchive": false
+  },
+  "dependencies": {}
+}

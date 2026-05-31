@@ -1,0 +1,19 @@
+{
+  "on": true,
+  "bri": 160,
+  "ps": 3,
+  "CBSnowlight": {
+    "mode": "Bluebird",
+    "reason": "clear daytime conditions",
+    "lastError": "",
+    "failures": 0,
+    "lastSuccessMs": 123456,
+    "modeHoldRemainingS": 0,
+    "snowfallMm": 0,
+    "cloudPct": 10,
+    "windGustKmh": 12,
+    "temperatureC": -4,
+    "localHour": 12,
+    "isDay": true
+  }
+}

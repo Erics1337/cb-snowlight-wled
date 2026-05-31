@@ -1,0 +1,43 @@
+{
+  "id": {
+    "name": "CB SnowLIGHT Dev"
+  },
+  "hw": {
+    "led": {
+      "total": 50,
+      "maxpwr": 1500,
+      "ins": [
+        {
+          "start": 0,
+          "len": 50,
+          "pin": [
+            2
+          ],
+          "order": 0,
+          "type": 22,
+          "ref": false,
+          "rev": false
+        }
+      ]
+    }
+  },
+  "um": {
+    "CBSnowlight": {
+      "enabled": true,
+      "autoModeEnabled": true,
+      "forceHttp": false,
+      "demoMode": false,
+      "latitude": 38.8833,
+      "longitude": -106.9436,
+      "updateIntervalMinutes": 30,
+      "minAutoModeDurationMinutes": 15,
+      "powderPresetId": 1,
+      "stormPresetId": 2,
+      "bluebirdPresetId": 3,
+      "alpenglowPresetId": 4,
+      "nightPresetId": 5,
+      "offlinePresetId": 6,
+      "demoPresetId": 7
+    }
+  }
+}

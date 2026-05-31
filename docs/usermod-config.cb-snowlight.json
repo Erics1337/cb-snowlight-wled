@@ -1,0 +1,30 @@
+{
+  "um": {
+    "CBSnowlight": {
+      "enabled": true,
+      "autoModeEnabled": true,
+      "forceHttp": false,
+      "demoMode": false,
+      "latitude": 38.8833,
+      "longitude": -106.9436,
+      "updateIntervalMinutes": 30,
+      "minAutoModeDurationMinutes": 15,
+      "powderSnowfallThresholdMm": 5.0,
+      "stormSnowfallThresholdMm": 1.0,
+      "stormWindThresholdKmh": 45.0,
+      "cloudThresholdPct": 75,
+      "offlineFailureThreshold": 3,
+      "alpenglowMorningStartHour": 6,
+      "alpenglowMorningEndHour": 8,
+      "alpenglowEveningStartHour": 17,
+      "alpenglowEveningEndHour": 19,
+      "powderPresetId": 1,
+      "stormPresetId": 2,
+      "bluebirdPresetId": 3,
+      "alpenglowPresetId": 4,
+      "nightPresetId": 5,
+      "offlinePresetId": 6,
+      "demoPresetId": 7
+    }
+  }
+}

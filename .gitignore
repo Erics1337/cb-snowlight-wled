@@ -1,0 +1,8 @@
+# Local WLED checkout used only for building/flashing (not part of this repo).
+WLED/
+
+# Hardware evidence captures
+hardware-snapshots/
+
+# Host-side test artifacts
+/tmp/
